@@ -3,7 +3,7 @@ import localFont from 'next/font/local'
 import Link from "next/link";
 
 const poppins = localFont({
-  src: "./app/fonts/Poppins-ExtraBold.ttf",
+  src: "./fonts/Poppins-ExtraBold.ttf",
   variable: "--font-poppins",
   weight: "100 900",
 });
