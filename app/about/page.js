@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -39,7 +40,7 @@ export default function About() {
         <section className="flex flex-col gap-2">
           <h2 className="text-2xl font-semibold text-blue-600">Get Started</h2>
           <p className="text-gray-700">
-            Try LinkForge now by heading to the <a href="/shorten" className="text-blue-700 underline font-medium">Shorten</a> page.
+            Try LinkForge now by heading to the <Link href="/shorten" className="text-blue-700 underline font-medium">Shorten</Link> page.
           </p>
           <div className="flex justify-center items-center mt-2">
             <a

@@ -14,7 +14,7 @@ export default function Contact() {
     <main className="bg-gradient-to-br from-teal-100 via-blue-50 to-white min-h-screen flex justify-center items-start pt-20 animate-fadein">
       <div className="max-w-xl w-full bg-white/80 rounded-3xl shadow-2xl p-10 flex flex-col gap-8 border border-teal-100 backdrop-blur-lg">
         <h1 className="text-4xl font-extrabold text-teal-700 text-center mb-2">Contact Us</h1>
-        <p className="text-lg text-gray-700 text-center mb-4">Have questions, feedback, or need support? Fill out the form below and we'll get back to you soon!</p>
+        <p className="text-lg text-gray-700 text-center mb-4">Have questions, feedback, or need support? Fill out the form below and we&apos;ll get back to you soon!</p>
         <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
           <div className="flex flex-col gap-2">
             <label htmlFor="name" className="font-semibold text-blue-700">Name</label>
@@ -32,7 +32,7 @@ export default function Contact() {
         </form>
         {submitted && (
           <div className="text-center text-lg font-semibold text-teal-700 bg-teal-50 border border-teal-200 rounded-xl py-3 px-4 shadow animate-fadein mt-2">
-            Thank you for contacting us! We'll get back to you soon.
+            Thank you for contacting us! We&apos;ll get back to you soon.
           </div>
         )}
       </div>
