@@ -9,7 +9,7 @@ No logins, no tracking, just simple and secure link shortening.
 - **Privacy-First:** No tracking, no analytics, and no collection of personal data.
 - **Custom Short URLs:** Choose your own shortlink text.
 - **Fast & Reliable:** Built for speed and simplicity.
-- **Open Source:** [View on GitHub](https://github.com/abhishekchauhan01x)
+- **Open Source:** [View on GitHub](https://github.com/abhishekchauhan01x/linkforge)
 
 ## Getting Started
 
