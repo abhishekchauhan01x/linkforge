@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <main className="bg-gradient-to-br from-teal-100 via-blue-50 to-white min-h-screen flex justify-center items-start pt-20 animate-fadein">
-      <div className="max-w-2xl w-full bg-white/80 rounded-3xl shadow-2xl p-10 flex flex-col gap-8 border border-teal-100 backdrop-blur-lg">
-        <div className="flex flex-col items-center gap-2">
-          <div className="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center shadow-lg mb-2 bg-white">
+    <main className="bg-gradient-to-br from-teal-100 via-blue-50 to-white min-h-screen flex justify-center items-start pt-10 md:pt-20 animate-fadein">
+      <div className="max-w-2xl w-full bg-white/80 rounded-3xl shadow-2xl p-4 md:p-10 flex flex-col gap-4 md:gap-8 border border-teal-100 backdrop-blur-lg">
+        <div className="flex flex-col items-center gap-1 md:gap-2">
+          <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden flex items-center justify-center shadow-lg mb-2 bg-white">
             <Image
               src="/trans_bg.png"
               alt="LinkForge Logo"
@@ -17,28 +17,28 @@ export default function About() {
               priority
             />
           </div>
-          <h1 className="text-4xl font-extrabold text-teal-700 text-center">About LinkForge</h1>
+          <h1 className="text-2xl md:text-4xl font-extrabold text-teal-700 text-center">About LinkForge</h1>
         </div>
-        <p className="text-lg text-gray-700">
+        <p className="text-base md:text-lg text-gray-700">
           <b>LinkForge</b> is your trusted, privacy-first URL shortener. Our mission is to provide the most straightforward and user-friendly way to shorten your links—without tracking you or requiring any login or personal details.
         </p>
-        <section className="flex flex-col gap-2">
-          <h2 className="text-2xl font-semibold text-blue-600">Why LinkForge?</h2>
-          <ul className="list-disc list-inside text-base pl-2 text-gray-700">
+        <section className="flex flex-col gap-1 md:gap-2">
+          <h2 className="text-xl md:text-2xl font-semibold text-blue-600">Why LinkForge?</h2>
+          <ul className="list-disc list-inside text-sm md:text-base pl-2 text-gray-700">
             <li>No login or registration required—just paste your link and go!</li>
             <li>We never track your activity or collect unnecessary data.</li>
             <li>Custom short URLs: choose your own shortlink text.</li>
             <li>Fast, reliable, and easy to use for everyone.</li>
           </ul>
         </section>
-        <section className="flex flex-col gap-2">
-          <h2 className="text-2xl font-semibold text-blue-600">Our Commitment to Privacy</h2>
+        <section className="flex flex-col gap-1 md:gap-2">
+          <h2 className="text-xl md:text-2xl font-semibold text-blue-600">Our Commitment to Privacy</h2>
           <p className="text-gray-700">
             Unlike most URL shorteners, LinkForge does not track your clicks, store analytics, or ask for your personal information. We believe in a simple, private, and secure web experience for all users.
           </p>
         </section>
-        <section className="flex flex-col gap-2">
-          <h2 className="text-2xl font-semibold text-blue-600">Get Started</h2>
+        <section className="flex flex-col gap-1 md:gap-2">
+          <h2 className="text-xl md:text-2xl font-semibold text-blue-600">Get Started</h2>
           <p className="text-gray-700">
             Try LinkForge now by heading to the <Link href="/shorten" className="text-blue-700 underline font-medium">Shorten</Link> page.
           </p>

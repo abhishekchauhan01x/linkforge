@@ -1,11 +1,13 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
 const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <nav className='sticky top-0 z-50 bg-gradient-to-r from-teal-600 to-blue-500 shadow-lg flex justify-between px-8 py-4 items-center text-white transition-all duration-300'>
-            <div className='logo font-extrabold text-2xl tracking-tight drop-shadow-lg flex items-center gap-2'>
+        <nav className='sticky top-0 z-50 bg-gradient-to-r from-teal-600 to-blue-500 shadow-lg flex flex-wrap md:flex-nowrap justify-between px-4 md:px-8 py-3 md:py-4 items-center text-white transition-all duration-300'>
+            <div className='logo font-extrabold text-xl md:text-2xl tracking-tight drop-shadow-lg flex items-center gap-2'>
                 <Link href="/">
                   <span className="flex items-center gap-2">
                     <Image src="/trans_bg.png" alt="Logo" width={32} height={32} className="rounded-full bg-white" priority />
@@ -13,7 +15,10 @@ const Navbar = () => {
                   </span>
                 </Link>
             </div>
-            <ul className='flex justify-center items-center gap-6 font-medium'>
+            <button className="md:hidden ml-auto text-white focus:outline-none" onClick={() => setMenuOpen(!menuOpen)}>
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
+            </button>
+            <ul className={`w-full md:w-auto flex-col md:flex-row flex md:flex gap-4 md:gap-6 font-medium items-center md:items-center transition-all duration-300 ${menuOpen ? 'flex' : 'hidden'} md:flex`}>
                 <li>
                   <Link href="/" className="hover:text-blue-200 transition-colors duration-200">Home</Link>
                 </li>
